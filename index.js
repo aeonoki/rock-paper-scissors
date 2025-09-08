@@ -45,7 +45,11 @@ function playGame(playerMove) {
     score.ties += 1;
   }
 
-  //localStorage.setItem('score', JSON.stringify(score));
+  setTimeout(() => {
+  if (Math.random() > 0.5) {
+    localStorage.setItem('score', JSON.stringify(score));
+  }
+}, 1000);
 
   updateScoreElement();
 
