@@ -13,7 +13,7 @@ function playGame(playerMove) {
   
   if(playerMove === 'scissors') {
     if (computerMove === 'rock') {
-      result = '?.';
+      result = 'Haha, Scissors and Rock a friends now!';
     } else if (computerMove === 'paper') {
       result = 'You win.';
     } else if (computerMove == 'scissors') {
